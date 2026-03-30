@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+:root {
+    --page-color: #7e6169;
+    --background: #2b1e22;
+    --primary: #f1e9eb;
+    --highlight: #cd8275;
+    --highlight-bright: #dc9b90;
+}
+
+html {
+    font-size: 150%;
+}
+
+body {
+    color: var(--primary);
+    background-color: var(--page-color);
+
+    width: 100vw;
+    height: 100dvh;
+
+    margin: 0;
+    line-height: 1;
+
+    font-size: 1rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.foreground-container {
+    width: calc(90vw - 2rem);
+    height: calc(90dvh - 2rem);
+
+    margin: 5dvh 5vw;
+    padding: 1rem;
+    
+    display: inline-flex;
+    flex-direction: column;
+
+    background-color: var(--background);
+}
+
+main {
+    overflow: hidden;
+
+    flex-grow: 1;
+
+    display: flex;
+}
+
+
+.content-container {
+    overflow: hidden;
+
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    overflow: auto;
+    overscroll-behavior-y: contain;
+    scrollbar-width: none;
+
+    flex-grow: 1;
+
+    text-align: justify;
+}
+
+article::-webkit-scrollbar {
+    display: none;
+}
+
+footer {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+nav {
+    margin-top: auto;
+
+    text-align: right;
+}
+
+h1 {
+    color: var(--highlight);
+    
+    margin: 0;
+    line-height: 1.15;
+    display: inline-block;
+    
+    font-size: 4rem;
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    margin: 0;
+
+    font-size: 1.5rem;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h3 {
+    margin: 0;
+
+    font-size: 1.2rem;
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1;
+}
+
+p {
+    margin: 0 0 1rem 0;
+}
+
+.subtitle{
+    margin-bottom: 0;
+}
+
+hr {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--highlight);
+    text-decoration: none;
+}
+
+footer > a{
+    color: var(--primary);
+}
+
+a:hover{
+    color: var(--highlight-bright);
+}
+
+ul {
+    margin: 0 0 1rem 0;
+}
